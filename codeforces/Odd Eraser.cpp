@@ -1,5 +1,3 @@
-// problem name: 
-// problem link: https://codeforces.com/contest/2258/problem/A
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -23,18 +21,19 @@ using namespace std;
 #define clr(mem, i) memset(mem, i, sizeof(mem))
 
 void solve() {
-  int n; cin >> n;
-  int arr[n];
-  for(auto &i: arr) cin >> i;
-  cout << __gcd(arr[0], arr[n-1]) << '\n';
+	int n;
+	cin >> n;
+	int arr[n];
+	for (auto& i : arr) cin >> i;
+	cout << __gcd(arr[0], arr[n - 1]) << '\n';
 }
 
 int main() {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  int t = 1;
-  cin >> t;
-  while (t--) {
-    solve();
-  }
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	int t = 1;
+	cin >> t;
+	while (t--) {
+		solve();
+	}
 }
