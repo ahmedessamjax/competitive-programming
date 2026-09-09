@@ -1,4 +1,4 @@
-// problem name: 
+// problem name: Holiday Of Equality
 // problem link: https://codeforces.com/problemset/problem/758/A
 #include <bits/stdc++.h>
 using namespace std;
@@ -23,21 +23,22 @@ using namespace std;
 #define clr(mem, i) memset(mem, i, sizeof(mem))
 
 void solve() {
-  int n; cin >> n;
-  int arr[n];
-  int mx = -1;
-  ring(i,0,n) cin >> arr[i], mx = max(mx, arr[i]);
-  int sum = 0;
-  ring(i,0,n) sum+= (mx - arr[i]);
-  cout << sum << '\n';
+	int n;
+	cin >> n;
+	int arr[n];
+	int mx = -1;
+	ring(i, 0, n) cin >> arr[i], mx = max(mx, arr[i]);
+	int sum = 0;
+	ring(i, 0, n) sum += (mx - arr[i]);
+	cout << sum << '\n';
 }
 
 int main() {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  int t = 1;
-  // cin >> t;
-  while (t--) {
-    solve();
-  }
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	int t = 1;
+	// cin >> t;
+	while (t--) {
+		solve();
+	}
 }
